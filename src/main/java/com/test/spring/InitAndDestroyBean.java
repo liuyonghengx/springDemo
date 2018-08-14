@@ -19,7 +19,7 @@ public class InitAndDestroyBean implements InitializingBean,DisposableBean {
     }
 
     public void init(){
-        System.out.println("----------init-methodz执行----------");
+        System.out.println("----------init-method执行----------");
     }
 
     @Override
@@ -40,5 +40,9 @@ public class InitAndDestroyBean implements InitializingBean,DisposableBean {
     @PreDestroy
     public void preDestroy(){
         System.out.println("----------@PreDestroy注解的preDestroy方法执行----------");
+    }
+
+    public void destory(){
+        System.out.println("----------destroy-method执行----------");
     }
 }
